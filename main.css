@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Navigation Bar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+main section ul {
+    list-style: none;
+}
+
+main section ul li {
+    margin: 10px 0;
+}
+
+main section ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+main section ul li a:hover {
+    color: #00ffcc;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: #ff5733;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #c70039;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.gradient-background {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    color: white;
+}
+
+/* Neon purple gradient headings */
+h1, h2 {
+    background: linear-gradient(90deg, #ff00ff, #8a2be2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    font-weight: bold;
+}
+
+/* Button-style links */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Link preview styles */
+a::before {
+    content: attr(href);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    bottom: 120%;
+}
+
+/* Special styling for the CTA button */
+.cta-button {
+    background: linear-gradient(90deg, #ff00ff, #8a2be2);
+    border: none;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #8a2be2, #ff00ff);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Fix list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    position: relative;
+}
